@@ -15,7 +15,7 @@ export default function Nav() {
       <motion.div style={{ scaleX: bar }} className="fixed top-0 left-0 right-0 h-[3px] bg-violet origin-left z-[70]" />
       <motion.header animate={{ y: hidden ? "-110%" : 0 }} transition={{ duration: 0.4 }}
         className="fixed top-0 inset-x-0 z-50 flex items-center justify-between px-6 md:px-14 py-5 bg-cream/80 backdrop-blur-md">
-        <a href="#home" className="font-display font-extrabold text-2xl tracking-tight">Puneet Mishra<span className="text-violet">.</span></a>
+        <a href="#home" className="font-display font-extrabold text-2xl tracking-tight"> Puneet Mishra <span className="text-violet"></span></a>
         <nav className="hidden md:flex gap-9 text-sm">
           {links.map((l) => (
             <a key={l} href={`#${l.toLowerCase()}`} className="relative group">
